@@ -7,6 +7,7 @@ const Step = ({ title, description, icon }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      className="step"
     >
       {icon}
       <h3>{title}</h3>
