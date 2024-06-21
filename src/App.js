@@ -15,6 +15,7 @@ import {
 import { motion } from "framer-motion";
 import FAQ from "./components/FAQ";
 import { Timeline, TimelineContent, TimelineItem } from "./components/Timeline";
+import art from "./assets/bg.jpg";
 
 const faqList = [
   {
@@ -156,7 +157,12 @@ const App = () => {
         </Timeline>
       </Section>
 
-      <Section id="use-cases" title={"Key Use Cases"}  style={{ alignItems: "stretch" }} className={"use-cases"}>
+      <Section
+        id="use-cases"
+        title={"Key Use Cases"}
+        style={{ alignItems: "stretch" }}
+        className={"use-cases"}
+      >
         <UseCase
           title="Gasless Payments"
           description="Send and receive USDT, Notcoin, and other tokens without worrying about gas fees."
@@ -171,29 +177,24 @@ const App = () => {
         />
       </Section>
 
-      <Section id="get-started" title={"Start using Tonkeeper Battery Today"}>
-        <Step
-          title="Update the App"
-          description="Update Tonkeeper on iOS or Android to version 4.3."
-          icon={<BatteryIcon />}
-        />
-        <Step
-          title="Top Up Battery"
-          description="Navigate to Settings → Battery and charge up."
-          icon={<PaymentIcon />}
-        />
-        <Step
-          title="Join the Beta"
-          description="Join our Battery Public Beta discussion group for feedback and suggestions."
-          icon={<ChatIcon />}
-        />
-        <Button
-          variant="contained"
-          color="primary"
-          style={{ backgroundColor: "#5FBD80", color: "#ffffff" }}
-        >
-          Join Now
-        </Button>
+      <Section id="get-started" className="cta bgimg">
+        <div className="lhs">
+          <h3>
+            Join the Tonkeeper Battery
+            <br /> Public Beta
+          </h3>
+          <p className="text">
+            Be the first to experience gasless transactions and NFT transfers
+            with Tonkeeper Battery.
+          </p>
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ backgroundColor: "#5FBD80", color: "#ffffff" }}
+          >
+            Join Now
+          </Button>
+        </div>
       </Section>
 
       <Section id="faq" title={"FAQ"}>

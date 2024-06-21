@@ -57,18 +57,7 @@ const GlobalStyles = createGlobalStyle`
     opacity: 0.7;
   }
 
-  .bgimg {
-    background-image: url(${imgUrl});
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    height: 100%;
-    width: 100vw;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  
   .burgerIcon{
     display: none;
   
@@ -78,6 +67,35 @@ const GlobalStyles = createGlobalStyle`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 
+  }
+  .cta>.content{
+    display: flex;
+    position: relative;
+    padding: 72px 48px;
+    ${"" /* background: #212f42; */}
+    ${
+      "" /* background: linear-gradient(to right, #212f42, rgba(255, 0, 0, 0)); */
+    }
+    background: linear-gradient(to right, #212f42 0%, #212f42 37%, rgba(255, 0, 0, 0) 100%);
+    text-align: left;
+    align-items: stretch;
+    flex-flow: row nowrap !important;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .cta{
+    border-radius: 8px;
+    width: 80% !important;
+    padding: 0 !important;
+  }
+  .bgimg{
+    background-image: url(${imgUrl});
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
   }
   @media only screen and (max-width: 768px) {
     .how-it-works{
