@@ -37,7 +37,7 @@ const Header = styled.header`
     @media (max-width: 768px) {
       display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
       position: absolute;
-      top: 60px;
+      top: 80px;
       right: 1rem;
       flex-direction: column;
       background-color: #101721;
