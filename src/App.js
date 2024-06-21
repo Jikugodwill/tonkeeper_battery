@@ -137,42 +137,6 @@ const App = () => {
         </motion.div>
         {/* <img src={hero} alt="Hero icon" /> */}
       </div>
-      <Section
-        style={{ width: "55%", alignItems: "stretch" }}
-        className="how-it-works"
-        id="how-it-works"
-        title={"How It Works"}
-      >
-        <Timeline>
-          <TimelineItem>
-            <TimelineContent align="left">
-              <Step
-                title="Receive Tokens"
-                description="Get stablecoins or NFTs directly to your wallet."
-                icon={<WalletIcon sx={{ fontSize: 48, color: "#5FBD80" }} />}
-              />
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineContent align="right">
-              <Step
-                title="Make Payments"
-                description="Send tokens without worrying about gas fees."
-                icon={<PaymentIcon sx={{ fontSize: 48, color: "#5FBD80" }} />}
-              />
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineContent align="left">
-              <Step
-                title="Monitor Charges"
-                description="View your battery status on the main screen."
-                icon={<BatteryIcon sx={{ fontSize: 48, color: "#5FBD80" }} />}
-              />
-            </TimelineContent>
-          </TimelineItem>
-        </Timeline>
-      </Section>
 
       <Section
         id="use-cases"
@@ -210,6 +174,43 @@ const App = () => {
           description="Top up your battery via in-app purchases or with TON/stablecoins."
           className={"div4"}
         />
+      </Section>
+
+      <Section
+        style={{ width: "55%", alignItems: "stretch" }}
+        className="how-it-works"
+        id="how-it-works"
+        title={"How It Works"}
+      >
+        <Timeline>
+          <TimelineItem>
+            <TimelineContent align="left">
+              <Step
+                title="Receive Tokens"
+                description="Get stablecoins or NFTs directly to your wallet."
+                icon={<WalletIcon sx={{ fontSize: 48, color: "#5FBD80" }} />}
+              />
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineContent align="right">
+              <Step
+                title="Make Payments"
+                description="Send tokens without worrying about gas fees."
+                icon={<PaymentIcon sx={{ fontSize: 48, color: "#5FBD80" }} />}
+              />
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineContent align="left">
+              <Step
+                title="Monitor Charges"
+                description="View your battery status on the main screen."
+                icon={<BatteryIcon sx={{ fontSize: 48, color: "#5FBD80" }} />}
+              />
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
       </Section>
 
       <Section id="get-started" className="cta bgimg">
