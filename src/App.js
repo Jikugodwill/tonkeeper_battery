@@ -96,7 +96,7 @@ const App = () => {
               fontSize: "3.5rem",
             }}
           >
-            Tonkeeper Battery
+            Introducing
             <br />
             <motion.span
               style={{
@@ -125,7 +125,12 @@ const App = () => {
           <button>Get Started</button>
         </motion.div>
       </Section>
-      <Section id="how-it-works" title={"How It Works"}>
+      <Section
+        style={{ width: "55%", alignItems: "stretch" }}
+        className="how-it-works"
+        id="how-it-works"
+        title={"How It Works"}
+      >
         <Timeline>
           <TimelineItem>
             <TimelineContent align="left">
