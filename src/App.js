@@ -85,7 +85,7 @@ const App = () => {
     <Layout>
       <Section
         id="home"
-        style={{ height: "60vh", justifyContent: "center" }}
+        style={{ height: "80vh", justifyContent: "center" }}
         className="hero"
       >
         <motion.div
