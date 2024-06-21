@@ -63,13 +63,39 @@ const GlobalStyles = createGlobalStyle`
   
   }
   .use-cases>.content{
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 16px;
-    justify-content: center;
-    align-items: center;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 18px;
   }
+
+  .use-cases .div1 { 
+    grid-area: 1 / 3 / 3 / 5;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    text-align: left;
+   }
+   .use-cases .div1 div{
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+   }
+  .use-cases .div2 { 
+    grid-area: 1 / 1 / 2 / 3; 
+    }
+  .use-cases .div3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background: transparent;
+    border: 1px solid #00acc1;
+    }
+  .use-cases .div4 { 
+    background: #fff;
+    color: #000;
+    grid-area: 2 / 2 / 3 / 3; 
+    }
   .cta>.content{
     display: flex;
     position: relative;

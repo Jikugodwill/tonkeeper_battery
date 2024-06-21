@@ -11,14 +11,14 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px auto;
+  margin: 3rem auto;
 `;
 
 const Title = styled.h2`
   font-weight: 900;
   font-style: normal;
   font-size: /*3vw*/ min(2.5rem, 5vw);
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 `;
 
 const Subtitle = styled.h3`

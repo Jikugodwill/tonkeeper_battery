@@ -15,8 +15,9 @@ import {
 import { motion } from "framer-motion";
 import FAQ from "./components/FAQ";
 import { Timeline, TimelineContent, TimelineItem } from "./components/Timeline";
-import art from "./assets/bg.jpg";
+import hero from "./assets/lightening.png";
 import { Link } from "react-scroll";
+import styled from "styled-components";
 
 const faqList = [
   {
@@ -64,6 +65,14 @@ const words = [
   "Supportive community engagement",
 ];
 
+const Title = styled.h3`
+  font-weight: 700;
+  font-style: normal;
+  font-size: min(2rem, 5vw);
+  margin-bottom: 1rem;
+  color: #5fbd80;
+`;
+
 const App = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
@@ -83,7 +92,7 @@ const App = () => {
 
   return (
     <Layout>
-      <Section
+      <div
         id="home"
         style={{ height: "80vh", justifyContent: "center" }}
         className="hero"
@@ -126,7 +135,8 @@ const App = () => {
             <button>See use cases</button>
           </Link>
         </motion.div>
-      </Section>
+        {/* <img src={hero} alt="Hero icon" /> */}
+      </div>
       <Section
         style={{ width: "55%", alignItems: "stretch" }}
         className="how-it-works"
@@ -170,17 +180,37 @@ const App = () => {
         style={{ alignItems: "stretch" }}
         className={"use-cases"}
       >
+        <div className="div1">
+          <Title>Seamless Transactions</Title>
+          <div className="usecase-desc text">
+            <p>
+              Effortlessly send and receive stablecoins, NFTs, and other tokens
+              without worrying about gas fees. Tonkeeper Battery automates fee
+              management, enabling smooth and uninterrupted transactions.
+            </p>
+            <p>
+              With Tonkeeper Battery, you can focus on what matters most—whether
+              it's trading, collecting NFTs, or managing your portfolio—without
+              the constant concern of managing gas fees. This innovation ensures
+              a more efficient and user-friendly experience for all blockchain
+              enthusiasts.
+            </p>
+          </div>
+        </div>
         <UseCase
           title="Gasless Payments"
           description="Send and receive USDT, Notcoin, and other tokens without worrying about gas fees."
+          className={"div2"}
         />
         <UseCase
           title="NFT Transfers"
           description="Easily transfer NFTs without needing native coins for fees."
+          className={"div3"}
         />
         <UseCase
-          title="Funding Options"
+          title="Convenient Funding"
           description="Top up your battery via in-app purchases or with TON/stablecoins."
+          className={"div4"}
         />
       </Section>
 
