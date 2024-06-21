@@ -186,14 +186,12 @@ const App = () => {
             <p>
               Effortlessly send and receive stablecoins, NFTs, and other tokens
               without worrying about gas fees. Tonkeeper Battery automates fee
-              management, enabling smooth and uninterrupted transactions.
+              management for smooth transactions.
             </p>
             <p>
-              With Tonkeeper Battery, you can focus on what matters most—whether
-              it's trading, collecting NFTs, or managing your portfolio—without
-              the constant concern of managing gas fees. This innovation ensures
-              a more efficient and user-friendly experience for all blockchain
-              enthusiasts.
+              Focus on trading, collecting NFTs, or managing your portfolio
+              without the constant concern of gas fees. This innovation ensures
+              a more efficient and user-friendly experience.
             </p>
           </div>
         </div>

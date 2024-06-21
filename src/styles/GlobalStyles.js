@@ -53,6 +53,16 @@ const GlobalStyles = createGlobalStyle`
     text-align: left;
     margin: 2rem 0;
   }
+  .hero{
+    background-color: inherit;
+  color: inherit;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+  }
   .text{
     opacity: 0.7;
   }
@@ -65,12 +75,12 @@ const GlobalStyles = createGlobalStyle`
   .use-cases>.content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: 18px;
   }
 
   .use-cases .div1 { 
-    grid-area: 1 / 3 / 3 / 5;
+    grid-area: 1 / 3 / 5 / 5;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
@@ -84,17 +94,17 @@ const GlobalStyles = createGlobalStyle`
     gap: 10px;
    }
   .use-cases .div2 { 
-    grid-area: 1 / 1 / 2 / 3; 
+    grid-area: 1 / 1 / 3 / 3;
     }
   .use-cases .div3 { 
-    grid-area: 2 / 1 / 3 / 2; 
+    grid-area: 3 / 1 / 5 / 2;
     background: transparent;
     border: 1px solid #00acc1;
     }
   .use-cases .div4 { 
     background: #fff;
     color: #000;
-    grid-area: 2 / 2 / 3 / 3; 
+    grid-area: 3 / 2 / 5 / 3;
     }
   .cta>.content{
     display: flex;
@@ -146,6 +156,20 @@ const GlobalStyles = createGlobalStyle`
     .cta p{
       width: 100%;
     }
+  }
+  @media only screen and (max-width: 992px) {
+    .use-cases .div1{
+      grid-area: 3 / 1 / 5 / 5;
+    }
+    .use-cases .div2 { grid-area: 1 / 1 / 2 / 5; }
+    .use-cases .div3 { grid-area: 2 / 1 / 3 / 3; }
+    .use-cases .div4 { grid-area: 2 / 3 / 3 / 5; }
+  }
+  @media only screen and (max-width: 586px) {
+    .use-cases .div1 { grid-area: 4 / 1 / 5 / 5; }
+    .use-cases .div2 { grid-area: 1 / 1 / 2 / 5; }
+    .use-cases .div3 { grid-area: 2 / 1 / 3 / 5; }
+    .use-cases .div4 { grid-area: 3 / 1 / 4 / 5; }
   }
 `;
 
