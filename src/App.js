@@ -94,7 +94,7 @@ const App = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             style={{
-              fontSize: "3.5rem",
+              fontSize: "min(5vw, 3.5rem)",
             }}
           >
             Introducing
