@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: inherit;
   color: inherit;
   text-align: center;
@@ -32,7 +32,7 @@ const Section = ({ id, title, subtitle, style, className, children }) => {
     <Wrapper id={id} style={style} className={className}>
       {title && <Title>{title}</Title>}
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
-      {children}
+      <div className="content">{children}</div>
     </Wrapper>
   );
 };

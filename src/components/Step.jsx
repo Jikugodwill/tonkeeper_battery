@@ -11,7 +11,7 @@ const Step = ({ title, description, icon }) => {
     >
       {icon}
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p className="text">{description}</p>
     </motion.div>
   );
 };

@@ -112,16 +112,10 @@ const App = () => {
               {words[currentWordIndex]}
             </motion.span>
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            style={{ marginTop: "12px" }}
-            className="text"
-          >
+          <p style={{ marginTop: "12px" }} className="text">
             A new way to use stablecoins and NFTs without worrying about gas
             fees
-          </motion.p>
+          </p>
           <button>Get Started</button>
         </motion.div>
       </Section>
@@ -162,7 +156,7 @@ const App = () => {
         </Timeline>
       </Section>
 
-      <Section id="use-cases" title={"Key Use Cases"}>
+      <Section id="use-cases" title={"Key Use Cases"}  style={{ alignItems: "stretch" }} className={"use-cases"}>
         <UseCase
           title="Gasless Payments"
           description="Send and receive USDT, Notcoin, and other tokens without worrying about gas fees."

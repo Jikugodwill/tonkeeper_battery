@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 2rem 0;
   }
   .text{
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   .bgimg {
@@ -72,6 +72,12 @@ const GlobalStyles = createGlobalStyle`
   .burgerIcon{
     display: none;
   
+  }
+  .use-cases>.content{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
   }
   @media only screen and (max-width: 768px) {
     .how-it-works{
