@@ -64,8 +64,10 @@ const GlobalStyles = createGlobalStyle`
   }
   .use-cases>.content{
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 16px;
+    justify-content: center;
+    align-items: center;
 
   }
   .cta>.content{
