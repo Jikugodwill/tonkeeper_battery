@@ -116,17 +116,13 @@ const App = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
+            style={{ marginTop: "12px" }}
+            className="text"
           >
             A new way to use stablecoins and NFTs without worrying about gas
             fees
           </motion.p>
-          <Button
-            variant="contained"
-            color="primary"
-            style={{ backgroundColor: "#212f42f5", color: "#ffffff" }}
-          >
-            Get Started
-          </Button>
+          <button>Get Started</button>
         </motion.div>
       </Section>
       <Section id="how-it-works" title={"How It Works"}>
@@ -205,12 +201,13 @@ const App = () => {
         <FAQ faqList={faqList} />
       </Section>
 
-      <Section id="contact" title={"Need Help?"}>
+      <Section id="support" title={"Need Help?"}>
         <motion.p
           initial={{ opacity: 0 }}
           whileHover={{ scale: 1.1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
+          className="text"
         >
           Join our support groups on Telegram for any assistance or questions.
         </motion.p>
@@ -220,13 +217,7 @@ const App = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ backgroundColor: "#212f42f5", color: "#ffffff" }}
-            >
-              Join Support Group
-            </Button>
+            <button>Join Support Group</button>
           </a>
         </div>
       </Section>

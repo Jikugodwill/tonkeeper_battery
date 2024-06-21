@@ -53,7 +53,7 @@ export const TimelineContent = styled.div`
   color: #ffffff;
   padding: 1rem;
   border-radius: 8px;
-  max-width: 45%;
+  max-width: 48%;
   width: auto;
   position: relative;
   z-index: 2;

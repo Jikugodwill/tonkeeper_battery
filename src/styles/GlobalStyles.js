@@ -30,10 +30,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    background: #5FBD80;
+    background: #212f42f5;
     color: #ffffff;
     border: none;
     padding: 0.5rem 1rem;
+    margin-top: 25px;
     cursor: pointer;
     transition: background 0.3s;
   }
@@ -47,6 +48,9 @@ const GlobalStyles = createGlobalStyle`
     flex-flow: column nowrap;
     text-align: left;
     margin: 2rem 0;
+  }
+  .text{
+    opacity: 0.7;
   }
 `;
 

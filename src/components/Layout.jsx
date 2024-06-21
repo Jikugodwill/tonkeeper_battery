@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import logo from "../assets/tonkeeperbatterylogo.jpg";
+import { Button } from "@mui/material";
 
 const Container = styled.div`
   width: 100%;
@@ -84,16 +85,16 @@ const Layout = ({ children }) => {
             <Link to="how-it-works" smooth={true} duration={500}>
               How It Works
             </Link>
-            <Link to="get-started" smooth={true} duration={500}>
-              Get Started
+            <Link to="support" smooth={true} duration={500}>
+              support
             </Link>
             <Link to="faq" smooth={true} duration={500}>
               FAQ
             </Link>
           </nav>
-          <motion.button whileTap={{ scale: 0.9 }}>
+          <Button style={{ backgroundColor: "#212f42f5", color: "#ffffff" }} whileTap={{ scale: 0.9 }}>
             Update Tonkeeper
-          </motion.button>
+          </Button>
         </Header>
         <Main>{children}</Main>
         <Footer>© 2024 Tonkeeper. All rights reserved.</Footer>
