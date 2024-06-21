@@ -77,7 +77,12 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <Container>
         <Header>
-          <img src={logo} width={70} alt="Tonkeeper" />
+          <div
+            style={{ display: "flex", alignItems: "center", fontWeight: "600" }}
+          >
+            <img src={logo} width={70} alt="Tonkeeper" />
+            <span>Tonkeeper Battery</span>
+          </div>
           <nav>
             <Link to="home" smooth={true} duration={500}>
               Home
@@ -92,7 +97,10 @@ const Layout = ({ children }) => {
               FAQ
             </Link>
           </nav>
-          <Button style={{ backgroundColor: "#212f42f5", color: "#ffffff" }} whileTap={{ scale: 0.9 }}>
+          <Button
+            style={{ backgroundColor: "#212f42f5", color: "#ffffff" }}
+            whileTap={{ scale: 0.9 }}
+          >
             Update Tonkeeper
           </Button>
         </Header>
