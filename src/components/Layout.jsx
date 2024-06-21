@@ -182,12 +182,18 @@ const Layout = ({ children }) => {
               FAQ
             </Link>
           </nav>
-          <Button
-            style={{ backgroundColor: "#212f42f5", color: "#ffffff" }}
-            whileTap={{ scale: 0.9 }}
+          <a
+            href="https://t.me/batterypublicbeta"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Tonkeeper
-          </Button>
+            <Button
+              style={{ backgroundColor: "#212f42f5", color: "#ffffff" }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Join Beta
+            </Button>
+          </a>
           <div className="burgerIcon">
             {menuOpen ? (
               <CloseMenuIcon onClick={toggleMenu} />

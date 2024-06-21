@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 import FAQ from "./components/FAQ";
 import { Timeline, TimelineContent, TimelineItem } from "./components/Timeline";
 import art from "./assets/bg.jpg";
+import { Link } from "react-scroll";
 
 const faqList = [
   {
@@ -82,7 +83,11 @@ const App = () => {
 
   return (
     <Layout>
-      <Section id="home">
+      <Section
+        id="home"
+        style={{ height: "60vh", justifyContent: "center" }}
+        className="hero"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -94,10 +99,10 @@ const App = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             style={{
-              fontSize: "min(5vw, 3.5rem)",
+              fontSize: "min(6vw, 5rem)",
             }}
           >
-            Introducing
+            Tonkeeper Battery
             <br />
             <motion.span
               style={{
@@ -117,7 +122,9 @@ const App = () => {
             A new way to use stablecoins and NFTs without worrying about gas
             fees
           </p>
-          <button>Get Started</button>
+          <Link to="use-cases" smooth={true} duration={500}>
+            <button>See use cases</button>
+          </Link>
         </motion.div>
       </Section>
       <Section
