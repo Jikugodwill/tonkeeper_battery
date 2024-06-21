@@ -180,20 +180,26 @@ const App = () => {
       <Section id="get-started" className="cta bgimg">
         <div className="lhs">
           <h3>
-            Join the Tonkeeper Battery
-            <br /> Public Beta
+            Join our public beta
+            <br /> today
           </h3>
           <p className="text">
             Be the first to experience gasless transactions and NFT transfers
             with Tonkeeper Battery.
           </p>
-          <Button
-            variant="contained"
-            color="primary"
-            style={{ backgroundColor: "#5FBD80", color: "#ffffff" }}
+          <a
+            href="https://t.me/batterypublicbeta"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Join Now
-          </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ backgroundColor: "#5FBD80", color: "#ffffff" }}
+            >
+              Join Now
+            </Button>
+          </a>
         </div>
       </Section>
 

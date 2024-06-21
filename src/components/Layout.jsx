@@ -186,7 +186,7 @@ const Layout = ({ children }) => {
             style={{ backgroundColor: "#212f42f5", color: "#ffffff" }}
             whileTap={{ scale: 0.9 }}
           >
-            Update Tonkeeper
+            Tonkeeper
           </Button>
           <div className="burgerIcon">
             {menuOpen ? (

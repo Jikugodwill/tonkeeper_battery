@@ -74,10 +74,6 @@ const GlobalStyles = createGlobalStyle`
     display: flex;
     position: relative;
     padding: 72px 48px;
-    ${"" /* background: #212f42; */}
-    ${
-      "" /* background: linear-gradient(to right, #212f42, rgba(255, 0, 0, 0)); */
-    }
     background: linear-gradient(to right, #212f42 0%, #212f42 37%, rgba(255, 0, 0, 0) 100%);
     text-align: left;
     align-items: stretch;
@@ -99,6 +95,16 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     width: 100%;
   }
+
+  .cta h3{
+    font-size: min(2.5rem, 5vw);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .cta p{
+    margin-bottom: 1rem;
+    max-width: 320px;
+  }
   @media only screen and (max-width: 768px) {
     .how-it-works{
       width: 80% !important;
@@ -106,6 +112,13 @@ const GlobalStyles = createGlobalStyle`
     .burgerIcon{
       display: block;
       cursor: pointer;
+    }
+    .cta>.content{
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .cta p{
+      width: 100%;
     }
   }
 `;
