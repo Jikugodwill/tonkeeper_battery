@@ -135,7 +135,6 @@ const App = () => {
             <button>See use cases</button>
           </Link>
         </motion.div>
-        {/* <img src={hero} alt="Hero icon" /> */}
       </div>
 
       <Section
