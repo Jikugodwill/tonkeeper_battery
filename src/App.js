@@ -15,7 +15,6 @@ import {
 import { motion } from "framer-motion";
 import FAQ from "./components/FAQ";
 import { Timeline, TimelineContent, TimelineItem } from "./components/Timeline";
-import hero from "./assets/lightening.png";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
