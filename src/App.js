@@ -91,11 +91,7 @@ const App = () => {
 
   return (
     <Layout>
-      <div
-        id="home"
-        style={{ height: "80vh", justifyContent: "center" }}
-        className="hero"
-      >
+      <div id="home" style={{ justifyContent: "center" }} className="hero">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
