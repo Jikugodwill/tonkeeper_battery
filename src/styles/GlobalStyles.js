@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import bgImg from "../assets/hero.jpeg";
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
@@ -55,19 +54,22 @@ const GlobalStyles = createGlobalStyle`
   }
   .hero{
     background-color: inherit;
-    background-image: url(${bgImg});
   color: inherit;
   text-align: center;
   position: relative;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 80vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  flex-direction: row;
+  height: 100vh;
   padding: 1rem 0;
+  align-items: center;
+  line-height: 180%;
+  }
+  .sideAsset{
+    width: 50%;
+  }
+  .sideAsset img{
+    width: 80%;
   }
   .text{
     opacity: 0.7;
@@ -129,15 +131,6 @@ const GlobalStyles = createGlobalStyle`
     width: 80% !important;
     padding: 0 !important;
   }
-  .bgOverlay{
-    background-color: #212f42a0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
 
   .cta h3{
     font-size: min(2.5rem, 5vw);
@@ -164,7 +157,14 @@ const GlobalStyles = createGlobalStyle`
       width: 100%;
     }
     .hero{
-      height: unset;
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    .hero .hero-rhs{
+      width: 100% !important;
+    }
+    .sideAsset{
+      width: 100%;
     }
   }
   @media only screen and (max-width: 992px) {

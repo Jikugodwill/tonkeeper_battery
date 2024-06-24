@@ -17,6 +17,7 @@ import FAQ from "./components/FAQ";
 import { Timeline, TimelineContent, TimelineItem } from "./components/Timeline";
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import assetHero from "./assets/hero-asset1.svg";
 
 const faqList = [
   {
@@ -92,19 +93,19 @@ const App = () => {
   return (
     <Layout>
       <div id="home" style={{ justifyContent: "center" }} className="hero">
-        <div className="bgOverlay"></div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          style={{ fontFamily: "Roboto, serif", zIndex: 1 }}
+          style={{ fontFamily: "Roboto, serif", width: "35%" }}
+          className="hero-rhs"
         >
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             style={{
-              fontSize: "min(8vw, 5rem)",
+              fontSize: "min(8vw, 3rem)",
             }}
           >
             Tonkeeper Battery
@@ -114,6 +115,7 @@ const App = () => {
                 display: "inline-block",
                 marginLeft: "0.5rem",
                 color: "#5FBD80",
+              fontSize: "min(4vw, 1.5rem)",
               }}
               key={currentWordIndex}
               initial={{ opacity: 0, y: 20 }}
@@ -123,7 +125,10 @@ const App = () => {
               {words[currentWordIndex]}
             </motion.span>
           </motion.h1>
-          <p style={{ margin: "12px auto 0 auto", width: "70%" }} className="text">
+          <p
+            style={{ margin: "12px auto 0 auto", width: "70%" }}
+            className="text"
+          >
             A new way to use stablecoins and NFTs without worrying about gas
             fees
           </p>
@@ -131,6 +136,9 @@ const App = () => {
             <button>See use cases</button>
           </Link>
         </motion.div>
+        <div className="sideAsset">
+          <img src={assetHero} alt="Hero Asset" />
+        </div>
       </div>
 
       <Section
