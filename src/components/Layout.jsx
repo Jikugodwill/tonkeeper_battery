@@ -88,12 +88,10 @@ const Header = styled.header`
 `;
 
 const Main = styled.main`
-  padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: transparent;
-  color: inherit;
+  color: inherit #212f42a0;
 `;
 
 const Footer = styled.footer`

@@ -17,7 +17,7 @@ const Card = styled.div`
 const Title = styled.h3`
   font-weight: 700;
   font-style: normal;
-  font-size: min(2rem, 3vw);
+  font-size: min(2rem, 5vw);
   /* margin-bottom: 1rem; */
   color: #5fbd80;
 `;

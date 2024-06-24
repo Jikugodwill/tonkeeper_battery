@@ -92,18 +92,19 @@ const App = () => {
   return (
     <Layout>
       <div id="home" style={{ justifyContent: "center" }} className="hero">
+        <div className="bgOverlay"></div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          style={{ fontFamily: "Roboto, serif" }}
+          style={{ fontFamily: "Roboto, serif", zIndex: 1 }}
         >
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             style={{
-              fontSize: "min(6vw, 5rem)",
+              fontSize: "min(8vw, 5rem)",
             }}
           >
             Tonkeeper Battery
@@ -122,7 +123,7 @@ const App = () => {
               {words[currentWordIndex]}
             </motion.span>
           </motion.h1>
-          <p style={{ marginTop: "12px" }} className="text">
+          <p style={{ margin: "12px auto 0 auto", width: "70%" }} className="text">
             A new way to use stablecoins and NFTs without worrying about gas
             fees
           </p>
